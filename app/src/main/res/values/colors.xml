@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- UIUC brand -->
+    <color name="navy">#13294B</color>
+    <color name="orange">#FF5F05</color>
+
+    <!-- Light-mode primary color for buttons/strokes (dark navy) -->
+    <color name="primary_interactive">#13294B</color>
+
+    <!-- Status badge colors -->
+    <color name="status_active">#388E3C</color>
+    <color name="status_taken">#F57C00</color>
+    <color name="status_claimed">#1976D2</color>
+
+    <!-- Divider (light) -->
+    <color name="divider">#E0E0E0</color>
+
+    <color name="contact_background">#FFF3E0</color>
+    <color name="map_hint_background">#FFF9C4</color>
+    <!-- 25% opacity navy for bottom nav ripple in light mode -->
+    <color name="nav_ripple">#4013294B</color>
+    <color name="ic_launcher_background">#13294B</color>
+    <color name="dot_inactive">#BDBDBD</color>
+
+    <!-- Used as colorPrimary in dark mode so outlined buttons are visible -->
+    <color name="navy_light">#8EAED4</color>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.UIUCLostFound" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_interactive</item>
+        <item name="colorPrimaryVariant">@color/navy</item>
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@color/navy</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <!-- Opt out of Android 15's forced edge-to-edge -->
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        <!-- Default slide transition (overridden per-activity for modals/tabs) -->
+        <item name="android:windowAnimationStyle">@style/SlideAnimation</item>
+    </style>
+
+    <style name="SlideAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- Used by PostItemActivity and PostDetailActivity (popup from bottom) -->
+    <style name="PopupAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_up_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/none</item>
+        <item name="android:activityCloseEnterAnimation">@anim/none</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_down_exit</item>
+    </style>
+
+    <!-- Used for tab switching (Home / Search / Account) -->
+    <style name="TabAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/tab_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/tab_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/tab_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/tab_exit</item>
+    </style>
+
+    <!-- Theme variant for tab activities — same theme but uses TabAnimation -->
+    <style name="Theme.UIUCLostFound.Tab" parent="Theme.UIUCLostFound">
+        <item name="android:windowAnimationStyle">@style/TabAnimation</item>
+    </style>
+
+    <!-- Theme variant for popup activities (PostItemActivity — slides up from bottom) -->
+    <style name="Theme.UIUCLostFound.Popup" parent="Theme.UIUCLostFound">
+        <item name="android:windowAnimationStyle">@style/PopupAnimation</item>
+    </style>
+
+    <!-- Theme for PostDetailActivity — uses the standard slide animation -->
+    <style name="Theme.UIUCLostFound.PostDetail" parent="Theme.UIUCLostFound">
+    </style>
+
+    <!-- Rounded corners for photo thumbnails in post list cards -->
+    <style name="ThumbnailShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+</resources>

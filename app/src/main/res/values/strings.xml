@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UIUC Lost &amp; Found</string>
+    <string name="status_left">Left in place</string>
+    <string name="status_taken">Taken by finder</string>
+    <string name="found_by">Found by %1$s</string>
+    <string name="no_description">No description provided</string>
+    <string name="photo_thumbnail_desc">Selected photo thumbnail</string>
+    <string name="remove_photo_desc">Remove photo</string>
+    <string name="claimed_by">Claimed by %1$s</string>
+    <string name="cloudinary_cloud_name">ddtmhoudi</string>
+    <string name="cloudinary_upload_preset">uiuc_lost_found</string>
+</resources>

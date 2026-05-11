@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider">#3C3C3C</color>
+    <!-- Contact section background in dark mode -->
+    <color name="contact_background">#1A2D3C</color>
+    <color name="map_hint_background">#2C2C1A</color>
+    <!-- 25% opacity orange for bottom nav ripple in dark mode -->
+    <color name="nav_ripple">#40FF5F05</color>
+    <!-- Navy brand color stays dark even in dark mode (used for toolbar bg) -->
+    <!-- But primary_interactive becomes light so outlined buttons are readable -->
+    <color name="primary_interactive">#8EAED4</color>
+    <color name="dot_inactive">#616161</color>
+</resources>

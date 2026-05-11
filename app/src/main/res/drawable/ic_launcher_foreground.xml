@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Adaptive icon foreground — 108×108dp canvas, 72×72 safe zone (18–90).
+  Matches the rendered PNG: location pin + magnifying glass, shared gradient lens.
+  No background here — navy gradient is supplied by ic_launcher_background.xml.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+      Location pin — teardrop shape.
+      Circle center (52, 47), radius 26.
+      L=(26,47)  R=(78,47)  Top=(52,21)  Tip=(52,84)
+    -->
+    <path android:pathData="M 52,84
+                            C 39,67 26,58 26,47
+                            A 26,26 0 0,1 78,47
+                            C 78,58 65,67 52,84 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="28" android:startY="21"
+                android:endX="76" android:endY="84">
+                <item android:offset="0" android:color="#FF8A35"/>
+                <item android:offset="1" android:color="#E04000"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!--
+      Magnifying glass ring — same center (52,47), stroke-radius=18.5, stroke-width=4.6.
+      Inner clear area r=16, outer visible r=21.
+    -->
+    <path
+        android:pathData="M 52,47 m -18.5,0 a 18.5,18.5 0 1,0 37,0 a 18.5,18.5 0 1,0 -37,0"
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.6" />
+
+    <!--
+      Handle — exits at 45° from ring stroke-center radius.
+      Start: (52+13.1, 47+13.1) = (65, 60). End: (83, 78).
+    -->
+    <path
+        android:pathData="M 65,60 L 83,78"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round" />
+
+    <!--
+      Shared inner circle — r=12.5, inside inner ring (r=16).
+      Gradient: warm cream (pin side) → white (glass side).
+    -->
+    <path android:pathData="M 52,47 m -12.5,0 a 12.5,12.5 0 1,0 25,0 a 12.5,12.5 0 1,0 -25,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="39.5" android:startY="34.5"
+                android:endX="64.5" android:endY="59.5">
+                <item android:offset="0" android:color="#FFDDB8"/>
+                <item android:offset="1" android:color="#FFFFFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+</vector>

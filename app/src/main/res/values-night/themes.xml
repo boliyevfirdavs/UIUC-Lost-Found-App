@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.UIUCLostFound" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Night mode: use light navy so outlined buttons are visible on dark bg -->
+        <item name="colorPrimary">@color/primary_interactive</item>
+        <item name="colorPrimaryVariant">@color/navy</item>
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@color/navy</item>
+        <item name="android:navigationBarColor">#1F1F1F</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        <item name="android:windowAnimationStyle">@style/SlideAnimation</item>
+    </style>
+
+    <style name="Theme.UIUCLostFound.Tab" parent="Theme.UIUCLostFound">
+        <item name="android:windowAnimationStyle">@style/TabAnimation</item>
+    </style>
+
+    <style name="Theme.UIUCLostFound.Popup" parent="Theme.UIUCLostFound">
+        <item name="android:windowAnimationStyle">@style/PopupAnimation</item>
+    </style>
+
+    <style name="Theme.UIUCLostFound.PostDetail" parent="Theme.UIUCLostFound">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">?attr/colorSurface</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+</resources>

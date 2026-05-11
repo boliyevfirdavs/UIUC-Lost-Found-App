@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175326270361",
+    "project_id": "lost-and-found-project-uiuc",
+    "storage_bucket": "lost-and-found-project-uiuc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175326270361:android:bae0ec7336c5bbfcedb908",
+        "android_client_info": {
+          "package_name": "edu.illinois.cs.cs124.ay2026.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACX7SKaXSH1HNMh_oGqoXrXLV8y-Ktrq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
